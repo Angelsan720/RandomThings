@@ -119,6 +119,12 @@ def compare_sequences(s1=None , s2=None , T=0.95):
 	print("Finished comparing all the sequences in %s seconds"%(t2 - t1))
 	print("output:%s-in-%.txts"%(sys.argv[1] , sys.argv[2]))
 
+	
+	"""
+	TODO:
+	Accumulate all the sequences that all have the highest jaccard
+	Script currently only take the first it finds
+	"""
 if (__name__ == "__main__"):
 	compare_sequences(use="command")
 
