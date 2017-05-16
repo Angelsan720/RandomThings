@@ -27,7 +27,7 @@ def Usage(msg=None):
 
 	print("python %s [path_to_target] target_substring replacement_substring"%sys.argv[0])
 	
-	if msf:	#My ocd made me add this
+	if msg:	#My ocd made me add this #words are hard
 		print(msg)
 	sys.exit()
 
