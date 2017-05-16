@@ -20,14 +20,15 @@ apparently : is somesort or reserverd character in FFMPEG
 import os
 import sys
 
-def Usage(msg=""):
+def Usage(msg=None):
 	print("%s:"%(sys.argv[0]))
 
 	print("python %s -h\t\t\t\tDisplay this message"%sys.argv[0])
 
 	print("python %s [path_to_target] target_substring replacement_substring"%sys.argv[0])
-
-	print(msg)
+	
+	if msf:	#My ocd made me add this
+		print(msg)
 	sys.exit()
 
 def rename(dir , target , replacement , flag=True):
