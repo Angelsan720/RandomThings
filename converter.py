@@ -33,27 +33,35 @@ def Usage(msg=None):
 	print("python %s -h\t\t\t\tDisplay this help"%sys.argv[0])
 
 	if msg:
+		print("Something don goofed:\n")
 		print(msg)
+		open("errorlog","w").write(e)
 	sys.exit(0)
 
 def bulkConvert(dir , oldFormat , newFormat):
 	if dir:
 		os.chdir(dir)
 	files = os.listdir()
-	log = open("log" , "w")
+	log = open("log" , "a")
 
 	for i in range(0 , len(files)):
-
 		newFile = files[i].split(".")
 		if (len(newFile)==2 and newFile[1] == oldFormat):
-			ff = ffmpy.FFmpeg(
-			inputs={files[i]: None},
-			outputs={"%s.%s"%(newFile[0] , newFormat): None})
 
-			log.write(ff.cmd)
+			ff = ffmpy.FFmpeg(
+			inputs={files[i]:None},
+			outputs={"%s.%s"%(newFile[0] , newFormat):"-strict -2"})
+
+			
+			log.write("%s\n"%(ff.cmd))
+			print("%s\n"%(ff.cmd))
+
 			start=time.time()
 			ff.run()
-			log.write("Time in seconds:%s"%(time.time() - start))
+			end = time.time()
+
+			log.write("Time in seconds:%s\n"%(end - start))
+			print("Time in seconds:%s\n"%(end - start))
 
 if __name__ == "__main__":
 	if len(sys.argv) < 2 or sys.argv[1] == "-h":
@@ -71,7 +79,6 @@ if __name__ == "__main__":
 
 	else:
 		Usage()
-	try:
-		bulkConvert(dir=dir , oldFormat=old , newFormat=new)
-	except Exception as e:
-		Usage("Something don goofed \n%s"%e)
+	
+	bulkConvert(dir=dir , oldFormat=old , newFormat=new)
+
