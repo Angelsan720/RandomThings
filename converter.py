@@ -3,19 +3,24 @@ Angel A. Sanquiche Sanchez
 angelsan720@gmail.com
 angel.sanquiche@upr.edu
 """
+def random_rant():
+	print(
+	"""
+	Ok Ill be the first to admit
+	I have no clue how video formats work
+	This script just takews some filenames splits
+	them at '.' and a adds the new extension for ffmpeg
 
-"""
-Ok Ill be the first to admit
-I have no clue how video formats work
-This script just takews some filenames splits
-them at '.' and a adds the new extension for ffmpeg
+	update 09-06-17
+	since ffmpeg is smart I found out this script can be used for more than just video formats.
+	audio formats work as well :)
 
-this is for simple bulk processing
-no big details can be added
+	this is for simple bulk processing
+	no big details can be added
 
-also I wonder how thisll run on my server
-Little warrior runs a celeron
-"""
+	also I wonder how thisll run on my server
+	Little warrior runs a celeron
+	""")
 
 import sys
 import os
