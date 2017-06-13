@@ -3,6 +3,12 @@
 from pushbullet import Pushbullet
 import sys
 import ConfigParser
+""""""
+"""This is a command line tool to push documents to devices using the pushbulet api"""
+"""I use confige parser mainly because I have other things running using the config"""
+"""you need to rename push.py.config to 'config' and add your token to it"""
+"""This tool will list your devices and let you choose which to push it too"""
+
 
 def Usage():
         print("Usage: %s [file to upload 1] <file to upload 2> <file upload 3...>")
