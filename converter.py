@@ -44,27 +44,39 @@ def Usage(msg=None):
 	sys.exit(0)
 
 def bulkConvert(dir , oldFormat , newFormat):
+
+	#Switch working directory if needed
 	if dir:
 		os.chdir(dir)
+		
+	#get a permanent list of the files to work with
 	files = os.listdir()
+	
+	#log when a command starts and if it ended
 	log = open("log" , "a")
 
 	for i in range(0 , len(files)):
+
+		#like I said it takes files based on extensions
 		newFile = files[i].split(".")
 		if (len(newFile)==2 and newFile[1] == oldFormat):
 
+			#use ffmpy to construct the command
 			ff = ffmpy.FFmpeg(
 			inputs={files[i]:None},
 			outputs={"%s.%s"%(newFile[0] , newFormat):"-strict -2"})
 
-			
+			#log that the command started
 			log.write("%s\n"%(ff.cmd))
 			print("%s\n"%(ff.cmd))
 
 			start=time.time()
 			ff.run()
 			end = time.time()
+			#uncomment below line to remove source file
+			#os.remove(file[i])
 
+			#log that it finished
 			log.write("Time in seconds:%s\n"%(end - start))
 			print("Time in seconds:%s\n"%(end - start))
 
