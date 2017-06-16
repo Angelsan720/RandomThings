@@ -1,0 +1,34 @@
+Trinity version: v2.2.0
+** NOTE: Latest version of Trinity is Trinity-v2.3.2, and can be obtained at:
+	https://github.com/trinityrnaseq/trinityrnaseq/releases
+
+Tuesday, January 31, 2017: 22:37:41	CMD: java -Xmx64m -XX:ParallelGCThreads=2 -jar /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/util/support_scripts/ExitTester.jar 0
+Tuesday, January 31, 2017: 22:37:41	CMD: java -Xmx64m -XX:ParallelGCThreads=2 -jar /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/util/support_scripts/ExitTester.jar 1
+Tuesday, January 31, 2017: 22:37:42	CMD: mkdir -p /work/humberto/asanquiche/pepino/trinity
+Tuesday, January 31, 2017: 22:37:42	CMD: mkdir -p /work/humberto/asanquiche/pepino/trinity/chrysalis
+
+
+----------------------------------------------------------------------------------
+-------------- Trinity Phase 1: Clustering of RNA-Seq Reads  ---------------------
+----------------------------------------------------------------------------------
+
+Tuesday, January 31, 2017: 22:37:42	CMD: cat /work/humberto/asanquiche/pepino/nomalized/SRR490649_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/pepino/nomalized/SRR490649_trimmed.fastq.gz.keep.readcount 
+-conversion of 637396 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 22:38:10	CMD: cat /work/humberto/asanquiche/pepino/nomalized/SRR490669_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/pepino/nomalized/SRR490669_trimmed.fastq.gz.keep.readcount 
+-conversion of 184801 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 22:38:19	CMD: cat /work/humberto/asanquiche/pepino/nomalized/SRR490752_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/pepino/nomalized/SRR490752_trimmed.fastq.gz.keep.readcount 
+-conversion of 172826 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 22:38:28	CMD: cat /work/humberto/asanquiche/pepino/nomalized/SRR490772_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/pepino/nomalized/SRR490772_trimmed.fastq.gz.keep.readcount 
+-conversion of 175816 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 22:38:36	CMD: cat /work/humberto/asanquiche/pepino/nomalized/SRR490864_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/pepino/nomalized/SRR490864_trimmed.fastq.gz.keep.readcount 
+-conversion of 20867523 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 22:40:06	CMD: cat /work/humberto/asanquiche/pepino/nomalized/SRR490868_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/pepino/nomalized/SRR490868_trimmed.fastq.gz.keep.readcount 
+-conversion of 20233789 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 22:41:34	CMD: cat /work/humberto/asanquiche/pepino/nomalized/SRR490918_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/pepino/nomalized/SRR490918_trimmed.fastq.gz.keep.readcount 
+-conversion of 20219418 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 22:43:03	CMD: cat /work/humberto/asanquiche/pepino/nomalized/SRR490919_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/pepino/nomalized/SRR490919_trimmed.fastq.gz.keep.readcount 
+-conversion of 20688141 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 22:44:32	CMD: cat /work/humberto/asanquiche/pepino/nomalized/SRR490920_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/pepino/nomalized/SRR490920_trimmed.fastq.gz.keep.readcount 
+-conversion of 20247906 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 22:46:00	CMD: cat /work/humberto/asanquiche/pepino/nomalized/SRR490921_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/pepino/nomalized/SRR490921_trimmed.fastq.gz.keep.readcount 
+Trinity run failed. Must investigate error above.

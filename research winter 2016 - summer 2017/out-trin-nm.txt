@@ -1,0 +1,174 @@
+Trinity version: v2.2.0
+** NOTE: Latest version of Trinity is Trinity-v2.3.2, and can be obtained at:
+	https://github.com/trinityrnaseq/trinityrnaseq/releases
+
+Tuesday, January 31, 2017: 12:01:17	CMD: java -Xmx64m -XX:ParallelGCThreads=2 -jar /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/util/support_scripts/ExitTester.jar 0
+Tuesday, January 31, 2017: 12:01:17	CMD: java -Xmx64m -XX:ParallelGCThreads=2 -jar /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/util/support_scripts/ExitTester.jar 1
+Tuesday, January 31, 2017: 12:01:17	CMD: mkdir -p /work/humberto/asanquiche/nemastotela/trinity
+Tuesday, January 31, 2017: 12:01:17	CMD: mkdir -p /work/humberto/asanquiche/nemastotela/trinity/chrysalis
+
+
+----------------------------------------------------------------------------------
+-------------- Trinity Phase 1: Clustering of RNA-Seq Reads  ---------------------
+----------------------------------------------------------------------------------
+
+Tuesday, January 31, 2017: 12:01:17	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R1_001_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R1_001_trimmed.fastq.gz.keep.readcount 
+-conversion of 1591008 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:01:27	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R1_002_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R1_002_trimmed.fastq.gz.keep.readcount 
+-conversion of 1589410 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:01:36	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R1_003_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R1_003_trimmed.fastq.gz.keep.readcount 
+-conversion of 1608815 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:01:46	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R1_004_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R1_004_trimmed.fastq.gz.keep.readcount 
+-conversion of 1593619 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:01:55	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R1_005_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R1_005_trimmed.fastq.gz.keep.readcount 
+-conversion of 733051 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:02:00	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R2_001_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R2_001_trimmed.fastq.gz.keep.readcount 
+-conversion of 1669995 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:02:10	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R2_002_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R2_002_trimmed.fastq.gz.keep.readcount 
+-conversion of 1667511 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:02:20	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R2_003_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R2_003_trimmed.fastq.gz.keep.readcount 
+-conversion of 1709960 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:02:30	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R2_004_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R2_004_trimmed.fastq.gz.keep.readcount 
+-conversion of 1678716 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:02:41	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R2_005_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/0Hour_ATCACG_L002_R2_005_trimmed.fastq.gz.keep.readcount 
+-conversion of 759930 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:02:45	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R1_001_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R1_001_trimmed.fastq.gz.keep.readcount 
+-conversion of 1510433 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:02:54	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R1_002_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R1_002_trimmed.fastq.gz.keep.readcount 
+-conversion of 1512026 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:03:03	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R1_003_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R1_003_trimmed.fastq.gz.keep.readcount 
+-conversion of 1526337 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:03:12	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R1_004_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R1_004_trimmed.fastq.gz.keep.readcount 
+-conversion of 1047417 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:03:18	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R2_001_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R2_001_trimmed.fastq.gz.keep.readcount 
+-conversion of 1552753 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:03:27	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R2_002_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R2_002_trimmed.fastq.gz.keep.readcount 
+-conversion of 1550778 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:03:36	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R2_003_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R2_003_trimmed.fastq.gz.keep.readcount 
+-conversion of 1586301 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:03:46	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R2_004_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/12Hour_TTAGGC_L002_R2_004_trimmed.fastq.gz.keep.readcount 
+-conversion of 1070829 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:03:52	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_001_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_001_trimmed.fastq.gz.keep.readcount 
+-conversion of 1797759 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:04:03	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_002_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_002_trimmed.fastq.gz.keep.readcount 
+-conversion of 1797374 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:04:14	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_003_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_003_trimmed.fastq.gz.keep.readcount 
+-conversion of 1783522 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:04:24	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_004_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_004_trimmed.fastq.gz.keep.readcount 
+-conversion of 1797214 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:04:35	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_005_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_005_trimmed.fastq.gz.keep.readcount 
+-conversion of 1814876 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:04:46	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_006_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_006_trimmed.fastq.gz.keep.readcount 
+-conversion of 1798855 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:04:57	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_007_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_007_trimmed.fastq.gz.keep.readcount 
+-conversion of 1800944 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:05:07	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_008_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R1_008_trimmed.fastq.gz.keep.readcount 
+-conversion of 457512 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:05:10	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_001_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_001_trimmed.fastq.gz.keep.readcount 
+-conversion of 1808999 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:05:21	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_002_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_002_trimmed.fastq.gz.keep.readcount 
+-conversion of 1809842 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:05:31	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_003_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_003_trimmed.fastq.gz.keep.readcount 
+-conversion of 1793982 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:05:42	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_004_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_004_trimmed.fastq.gz.keep.readcount 
+-conversion of 1808127 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:05:53	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_005_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_005_trimmed.fastq.gz.keep.readcount 
+-conversion of 1852922 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:06:04	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_006_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_006_trimmed.fastq.gz.keep.readcount 
+-conversion of 1821323 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:06:15	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_007_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_007_trimmed.fastq.gz.keep.readcount 
+-conversion of 1809266 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:06:26	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_008_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/18Hour_TGACCA_L002_R2_008_trimmed.fastq.gz.keep.readcount 
+-conversion of 462228 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:06:29	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_001_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_001_trimmed.fastq.gz.keep.readcount 
+-conversion of 1743301 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:06:39	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_002_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_002_trimmed.fastq.gz.keep.readcount 
+-conversion of 1750292 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:06:50	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_003_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_003_trimmed.fastq.gz.keep.readcount 
+-conversion of 1752719 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:07:00	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_004_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_004_trimmed.fastq.gz.keep.readcount 
+-conversion of 1732996 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:07:10	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_005_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_005_trimmed.fastq.gz.keep.readcount 
+-conversion of 1748159 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:07:21	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_006_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_006_trimmed.fastq.gz.keep.readcount 
+-conversion of 1773610 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:07:31	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_007_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_007_trimmed.fastq.gz.keep.readcount 
+-conversion of 1754864 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:07:42	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_008_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_008_trimmed.fastq.gz.keep.readcount 
+-conversion of 1752682 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:07:52	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_009_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_009_trimmed.fastq.gz.keep.readcount 
+-conversion of 1756660 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:08:02	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_010_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R1_010_trimmed.fastq.gz.keep.readcount 
+-conversion of 68323 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:08:03	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_001_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_001_trimmed.fastq.gz.keep.readcount 
+-conversion of 1814537 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:08:14	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_002_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_002_trimmed.fastq.gz.keep.readcount 
+-conversion of 1821299 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:08:24	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_003_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_003_trimmed.fastq.gz.keep.readcount 
+-conversion of 1824741 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:08:35	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_004_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_004_trimmed.fastq.gz.keep.readcount 
+-conversion of 1806270 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:08:46	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_005_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_005_trimmed.fastq.gz.keep.readcount 
+-conversion of 1819385 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:08:56	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_006_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_006_trimmed.fastq.gz.keep.readcount 
+-conversion of 1888327 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:09:08	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_007_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_007_trimmed.fastq.gz.keep.readcount 
+-conversion of 1817194 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:09:18	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_008_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_008_trimmed.fastq.gz.keep.readcount 
+-conversion of 1837101 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:09:29	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_009_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_009_trimmed.fastq.gz.keep.readcount 
+-conversion of 1835019 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:09:40	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_010_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourA_ACAGTG_L002_R2_010_trimmed.fastq.gz.keep.readcount 
+-conversion of 72402 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:09:40	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourB_GCCAAT_L002_R1_001_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourB_GCCAAT_L002_R1_001_trimmed.fastq.gz.keep.readcount 
+-conversion of 1198116 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:09:47	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/24HourB_GCCAAT_L002_R2_001_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/24HourB_GCCAAT_L002_R2_001_trimmed.fastq.gz.keep.readcount 
+-conversion of 1267201 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:09:55	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R1_001_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R1_001_trimmed.fastq.gz.keep.readcount 
+-conversion of 1536709 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:10:04	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R1_002_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R1_002_trimmed.fastq.gz.keep.readcount 
+-conversion of 1532486 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:10:13	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R1_003_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R1_003_trimmed.fastq.gz.keep.readcount 
+-conversion of 1542291 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:10:22	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R1_004_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R1_004_trimmed.fastq.gz.keep.readcount 
+-conversion of 1553970 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:10:31	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R1_005_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R1_005_trimmed.fastq.gz.keep.readcount 
+-conversion of 1496343 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:10:39	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R2_001_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R2_001_trimmed.fastq.gz.keep.readcount 
+-conversion of 1595132 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:10:49	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R2_002_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R2_002_trimmed.fastq.gz.keep.readcount 
+-conversion of 1592988 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:10:58	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R2_003_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R2_003_trimmed.fastq.gz.keep.readcount 
+-conversion of 1612155 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:11:07	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R2_004_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R2_004_trimmed.fastq.gz.keep.readcount 
+-conversion of 1633139 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:11:16	CMD: cat /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R2_005_trimmed.fastq.gz.keep | /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/fastool/fastool --illumina-trinity --to-fasta >> single.fa 2> /work/humberto/asanquiche/nemastotela/nomalized/6Hour_CGATGT_L002_R2_005_trimmed.fastq.gz.keep.readcount 
+-conversion of 1558655 from FQ to FA format succeeded.
+Tuesday, January 31, 2017: 12:11:26	CMD: touch single.fa.ok
+-------------------------------------------
+----------- Jellyfish  --------------------
+-- (building a k-mer catalog from reads) --
+-------------------------------------------
+
+* Running CMD: /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/jellyfish/bin/jellyfish count -t 8 -m 25 -s 7094815405  --canonical  single.fa
+* Running CMD: /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/jellyfish/bin/jellyfish dump -L 1 mer_counts.jf > jellyfish.kmers.fa
+* Running CMD: /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/trinity-plugins/jellyfish/bin/jellyfish histo -t 8 -o jellyfish.kmers.fa.histo mer_counts.jf
+----------------------------------------------
+--------------- Inchworm ---------------------
+-- (Linear contig construction from k-mers) --
+----------------------------------------------
+
+* Running CMD: /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/Inchworm/bin//inchworm --kmers jellyfish.kmers.fa --run_inchworm -K 25 -L 25 --monitor 1   --DS  --num_threads 6  --PARALLEL_IWORM  > /work/humberto/asanquiche/nemastotela/trinity/inchworm.K25.L25.DS.fa.tmp
+/work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/Inchworm/bin//inchworm: /cm/shared/apps/gcc/4.9.3/lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/Inchworm/bin//inchworm)
+Error, cmd: /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/Inchworm/bin//inchworm --kmers jellyfish.kmers.fa --run_inchworm -K 25 -L 25 --monitor 1   --DS  --num_threads 6  --PARALLEL_IWORM  > /work/humberto/asanquiche/nemastotela/trinity/inchworm.K25.L25.DS.fa.tmp 2>tmp.18123.stderr died with ret 256 at /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/PerlLib/Pipeliner.pm line 102
+	Pipeliner::run('Pipeliner=HASH(0xad8380)') called at /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/Trinity line 2058
+	eval {...} called at /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/Trinity line 2053
+	main::run_inchworm('/work/humberto/asanquiche/nemastotela/trinity/inchworm.K25.L2...', 'single.fa', undef, '') called at /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/Trinity line 1428
+	main::run_Trinity() called at /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/Trinity line 1209
+	eval {...} called at /work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/Trinity line 1208
+
+
+
+If it indicates bad_alloc(), then Inchworm ran out of memory.  You'll need to either reduce the size of your data set or run Trinity on a server with more memory available.
+
+** The inchworm process failed.

@@ -1,0 +1,5 @@
+#! /bin/bash
+
+#module load trinityrnaseq/2.1.1
+
+/work/humberto/asanquiche/tools/trinityrnaseq-2.2.0/Trinity --seqType fq --max_memory 100G --single /work/humberto/asanquiche/nemastotela/0Hour/0Hour_ATCACG_L002_R1_001_trimmed.fastq.gz.keep,/work/humberto/asanquiche/nemastotela/0Hour/0Hour_ATCACG_L002_R1_002_trimmed.fastq.gz.keep,/work/humberto/asanquiche/nemastotela/0Hour/0Hour_ATCACG_L002_R1_003_trimmed.fastq.gz.keep,/work/humberto/asanquiche/nemastotela/0Hour/0Hour_ATCACG_L002_R1_004_trimmed.fastq.gz.keep,/work/humberto/asanquiche/nemastotela/0Hour/0Hour_ATCACG_L002_R1_005_trimmed.fastq.gz.keep,/work/humberto/asanquiche/nemastotela/0Hour/0Hour_ATCACG_L002_R2_001_trimmed.fastq.gz.keep,/work/humberto/asanquiche/nemastotela/0Hour/0Hour_ATCACG_L002_R2_002_trimmed.fastq.gz.keep,/work/humberto/asanquiche/nemastotela/0Hour/0Hour_ATCACG_L002_R2_003_trimmed.fastq.gz.keep,/work/humberto/asanquiche/nemastotela/0Hour/0Hour_ATCACG_L002_R2_004_trimmed.fastq.gz.keep,/work/humberto/asanquiche/nemastotela/0Hour/0Hour_ATCACG_L002_R2_005_trimmed.fastq.gz.keep --CPU 8 --output /work/humberto/asanquiche/nemastotela/trinity
