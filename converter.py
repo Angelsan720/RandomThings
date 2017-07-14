@@ -74,7 +74,7 @@ def bulkConvert(dir , oldFormat , newFormat):
 			ff.run()
 			end = time.time()
 			#uncomment below line to remove source file
-			#os.remove(file[i])
+			#os.remove(files[i])
 
 			#log that it finished
 			log.write("Time in seconds:%s\n"%(end - start))
