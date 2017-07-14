@@ -3,19 +3,24 @@
 #include <iomanip>
 #include <unistd.h>
 
+
+/*
+
+In the words of one of my profesors. A good c/cpp programer knows what the compiler turns the code into.
+This is a test of how to make inline asm and to see if I know what the compiler would do with a simple for loop.
+Works on linux on normal optimization need to fix to run on windows.
+
+*/
 using namespace std;
 uint64_t n;
 uint64_t m;
-
-uint64_t count(){
+void count(){
         for(;;)
         {
                 m++;
                 if (n == m)
                         break;
         }
-return m;
-
 };
 void printPercent(){
         cout << fixed << setprecision( 3 )<<"Percent:"<< (m/n)*100 << "%";
@@ -38,8 +43,7 @@ void load(){
 			"mov %%rax, %0"
 			:"=r"(n) , "=r"(m));
 }
-
-uint64_t count_asm(){
+void count_asm(){
 	__asm__ __volatile__ (
 			"mov %1, %%rax;"
 			"mov %2, %%rbx;"
@@ -49,9 +53,6 @@ uint64_t count_asm(){
 			"jne loop;"
 			:"=r"(m)
 			:"r"(n) , "r"(m));
-
-return m;
-
 }
 
 int main(){
