@@ -110,7 +110,7 @@ def compare_sequences(s1=None , s2=None , T=0.95):
 				max = (seq1[0] , seq2[0] , j )
 
 		#write out the maximum sequence in the output
-		out.write("\n%s\n%s\ncorrespondence:%s\n"%(max[0] , max[1] , max[2]))
+		out.write("%s---%s---%s\n"%(max[0] , max[1] , max[2]))
 
 
 	t2 = time.time()
