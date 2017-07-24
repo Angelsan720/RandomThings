@@ -44,7 +44,7 @@ def usage(use):
 		print("Usage: s1=<file A> , s2=<file B>")
 	sys.exit(0)
 
-def compare_sequences(s1=None , s2=None , T=0.95):
+def compare_sequences(s1=None , s2=None , T=0.95 , use="function"):
 	#if imported
 	if s1 and s2:
 		seqfile1 = screed.open(s2)
@@ -55,7 +55,7 @@ def compare_sequences(s1=None , s2=None , T=0.95):
 		seqfile2 = screed.open(sys.argv[2])
 	#in case of some sort of input error
 	else:
-		usage()
+		usage(use)
 
 	#lists to hold all the sequences in the files
 	f1 , f2 = [] , []
