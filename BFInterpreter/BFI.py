@@ -1,3 +1,17 @@
+"""
+Angel A. Sanquiche Sanchez
+angelsan720@gmail.com
+angel.sanquiche@upr.edu
+
+OK this has been a long standing project for me since some time back and being without highspeed internet makes me do some 
+strange things so of course the natural thing to do is make a Brainfuck interpreter. My recent Theory of computability class
+reminded me of Brainfuck and a few hours of wikipedia and sublime did wonders. Its array (here a list) is basically the tape
+in the turing machine it has a pointer to a spot in the tape and a few simple functions. I left some troubleshooting funtions
+behind and I might add a garbage collector later but I'm quite happy with what I've done, not perfect but I'm happy.
+
+"""
+
+
 import sys
 from time import sleep
 
