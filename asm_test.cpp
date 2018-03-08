@@ -5,6 +5,11 @@
 
 
 /*
+"""
+Angel A. Sanquiche Sanchez
+angelsan720@gmail.com
+angel.sanquiche@upr.edu
+"""
 
 In the words of one of my profesors. A good c/cpp programer knows what the compiler turns the code into.
 This is a test of how to make inline asm and to see if I know what the compiler would do with a simple for loop.
